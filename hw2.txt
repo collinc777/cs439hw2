@@ -1,0 +1,8 @@
+1 a. (((n+1)(n)/2) + n + 10) / (n+1)
+
+1 b. (10 + (10 + ((n+1) * n) / 2))/(n + 1)
+
+2. No this program will not always have the same output. The reason output varies is that
+   what is outputted is based upon the pid a process is given at the fork. Sometimes the parent process will be given 0 at fork and other times the child process will be given 0. One of the two will always receive 0 and the other will recieve a nonzero value but which the scheduler assigns them varies. 
+
+3. 
